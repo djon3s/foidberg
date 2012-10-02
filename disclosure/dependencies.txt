@@ -1,0 +1,4 @@
+scrapy 
+django
+django-bootstrap
+#incomplete 
