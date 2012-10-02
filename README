@@ -15,5 +15,5 @@ TODO  - SPIDER AND BACKEND
 
 Suggestion for future features
 
-* for each entry, check if it provides an email address as reference
+* for each entry, check if it provides an email address as reference, if it does provide create an email to automatically request document on behalf of site, future emails with attachments are directed to be checked by admin interface before publishing. IF no attachment, email is forwarded to email of admin to continue conversation manually. It sucks having to get people to email someone to view data they are entitled to. :-(
 
