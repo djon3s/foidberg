@@ -1,7 +1,19 @@
-This spiders the DOI disclosure pages of transport, health and education in NSW & posts the details to a database which is django compatible. If you start djangos admin interface you can see the details ready to create a site.
+This spiders the FOI disclosure log  pages of transport, health and communities in NSW & posts the details to a database which is django compatible. If you start djangos admin interface you can see the details ready to create a site.
+
+Other disclosure sites can be added easily using scrapy. To see example spiders see ./disclosures/disclosure/spiders (directory structure names are confusing, can be changed later)
 
 SETUP
 
 In a sec...
 
+
+TODO  - SPIDER AND BACKEND
+* fix directory structure names to be less confusing
+* make the reference number the unique identifier in the SQL DB
+* create BASH script to spider periodically (say daily) and coupled with reference number being unique identifier only add to database when new entries come up
+
+
+Suggestion for future features
+
+* for each entry, check if it provides an email address as reference
 
