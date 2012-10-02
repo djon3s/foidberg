@@ -1,0 +1,7 @@
+This spiders the DOI disclosure pages of transport, health and education in NSW & posts the details to a database which is django compatible. If you start djangos admin interface you can see the details ready to create a site.
+
+SETUP
+
+In a sec...
+
+
