@@ -9,11 +9,36 @@ The cool thing about this is how you can populate a django DB by just writing sp
 
 SETUP
 
-In a sec...
+Requires django & scrapy (which should install twisted)
+
+Unfortunately for some reason scrapy requires sudo to install.
+
+sudo pip install twisted
+sudo pip install scrapy
+sudo pip install django
+
 
 HOW TO USE
 
-Coming...
+First set up the django database 
+
+in ./disclosure/foisite 
+
+'python manage.py syncdb'
+
+to populate with entries from transport
+
+'scrapy crawl transport'
+
+now 'python manage.py runserver'
+
+you can view the admin interface on 127.0.0.1:8000/admin
+
+CTRL-C
+
+to add health and communities simply
+
+'scrapy crawl health' and 'scrapy crawl communities'
 
 TODO  - SPIDER AND BACKEND
 * fix directory structure names to be less confusing
