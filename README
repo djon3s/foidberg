@@ -40,6 +40,8 @@ to add health and communities simply
 
 'scrapy crawl health' and 'scrapy crawl communities'
 
+in between spiders it might help to run 'python manage.py syncdb'
+
 TODO  - SPIDER AND BACKEND
 * fix directory structure names to be less confusing
 * make the reference number the unique identifier in the SQL DB
