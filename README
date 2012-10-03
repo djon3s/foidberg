@@ -1,9 +1,11 @@
-This spiders the FOI disclosure log  pages of transport, health and communities in NSW & posts the details to a database which is django compatible. If you start djangos admin interface you can see the details ready to create a site.
+This asynchronously spiders the FOI disclosure log  pages of transport, health and communities in NSW & posts the details to a database which is django compatible. If you start djangos admin interface you can see the details ready to create a site. It's possible to do 300+ requests a second :-) Alas, there are only 3  requests to spider at the moment, but it would be easy to upgrade this to take entire NSW gov sites down, hash & store by version. 
 
 Other disclosure sites can be added easily using scrapy. To see example spiders see ./disclosures/disclosure/spiders (directory structure names are confusing, can be changed later) You'll need to have the XPATH of the fields you want to grab handy, a useful way to get this is with the firebug extension for firefox
 .
 
 Please report any bugs/issues/feature suggestions at https://github.com/djon3s/foidberg/issues/
+
+The cool thing about this is how you can populate a django DB by just writing spider modules. Evil.
 
 SETUP
 
