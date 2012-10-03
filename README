@@ -11,7 +11,7 @@ SETUP
 
 Requires django & scrapy (which should install twisted)
 
-Unfortunately for some reason scrapy requires sudo to install.
+Unfortunately for somereason you cannot use virtualenv for scrapy
 
 sudo pip install twisted
 sudo pip install scrapy
