@@ -1,4 +1,4 @@
-This asynchronously spiders the FOI disclosure log  pages of transport, health and communities in NSW & posts the details to a database which is django compatible. If you start djangos admin interface you can see the details ready to create a site. It's possible to do 300+ requests a second :-) Alas, there are only 3  requests to spider at the moment, but it would be easy to upgrade this to take entire NSW gov sites down, hash & store by version. 
+This asynchronously spiders the FOI disclosure log  pages of transport, health and communities in NSW & posts the details to a database which is django compatible. If you start djangos admin interface you can see the details ready to create a site.  
 
 Other disclosure sites can be added easily using scrapy. To see example spiders see ./disclosures/disclosure/spiders (directory structure names are confusing, can be changed later) You'll need to have the XPATH of the fields you want to grab handy, a useful way to get this is with the firebug extension for firefox
 .
@@ -16,13 +16,18 @@ Unfortunately for somereason you cannot use virtualenv for scrapy
 sudo pip install twisted
 sudo pip install scrapy
 sudo pip install django
+sudo apt-get install python-dateutil
 
+edit: for some reason it's reliant on bootstrap (pip install bootstrap)
+this is a dependency that needs to be removed.
 
 HOW TO USE
 
 First set up the django database in ./disclosure/foisite 
 
 'python manage.py syncdb'
+
+edit the file foidberg/disclosure/disclosure/settings.py to reflect right location
 
 populate with entries from transport
 

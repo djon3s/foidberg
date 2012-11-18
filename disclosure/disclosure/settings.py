@@ -26,6 +26,6 @@ def setup_django_env(path):
 
     sys.path.append(os.path.abspath(os.path.join(path, os.path.pardir)))
 
-setup_django_env('/home/lovelace/src/python/nswgov/disclosure/foisite/foisite')
-
+#setup_django_env('/home/lovelace/src/python/nswgov/disclosure/foisite/foisite')
+setup_django_env('/home/malaparte/src/python/sid/foidberg/disclosure/foisite/foisite')
 
