@@ -31,7 +31,7 @@ edit the file foidberg/disclosure/disclosure/settings.py to reflect right locati
 
 populate with entries from transport
 
-'scrapy crawl transport' or 'health' or 'communities'
+'scrapy crawl transport' or 'health' or 'communities' in the 'foisite directory' #TODO: fix this for all directories
 
 in between spiders it might help to run 'python manage.py syncdb'
 
